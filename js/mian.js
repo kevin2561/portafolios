@@ -27,15 +27,15 @@ const main = () => {
     ]
 
     const proyectos = [
-        { nombre: "EDO", real: "1", empresa: "SECUAZ", img: "proyectos/proyecto_edo.jpg", git: "", pagina: "https://restaurantnikkei.fr", descripcion: "Dessarrollo de una página web, con el objetivo de promover sus servicios de manera efectiva. La web fue creada utilizando WordPress y Elementor." },
+        { nombre: "EDO", real: "1", empresa: "SECUAZ", img: "./img/proyectos/proyecto_edo.jpg", git: "", pagina: "https://restaurantnikkei.fr", descripcion: "Dessarrollo de una página web, con el objetivo de promover sus servicios de manera efectiva. La web fue creada utilizando WordPress y Elementor." },
 
-        { nombre: "The Simpson", real: "0", empresa: "", img: "proyectos/proyecto_simpson.jpg", git: "https://github.com/kevin2561/theSimpson", pagina: "https://musical-peony-5c424d.netlify.app/", descripcion: "Un sitio web de Los Simpsons que fue creado ya que me gustó mucho la serie desde que era un niño y también fue una buena manera de practicar mis conocimientos de js y el framework React que utilicé para crear este sitio web." },
+        { nombre: "The Simpson", real: "0", empresa: "", img: "./img/proyectos/proyecto_simpson.jpg", git: "https://github.com/kevin2561/theSimpson", pagina: "https://musical-peony-5c424d.netlify.app/", descripcion: "Un sitio web de Los Simpsons que fue creado ya que me gustó mucho la serie desde que era un niño y también fue una buena manera de practicar mis conocimientos de js y el framework React que utilicé para crear este sitio web." },
 
-        { nombre: "Dota 2", real: "0", empresa: "", img: "proyectos/proyecto_dota2.jpg", git: "https://github.com/kevin2561/dota2", pagina: "", descripcion: "Una pagina web de Dota 2, creo en esta pagina porque me encanto el juego, fue uno de los juegos que mas me entretuvo y ademas fue una buena forma de practicar con js ya que en esta pagina esta hecha con js puro y un poco de jQuery." },
+        { nombre: "Dota 2", real: "0", empresa: "", img: "./img/proyectos/proyecto_dota2.jpg", git: "https://github.com/kevin2561/dota2", pagina: "", descripcion: "Una pagina web de Dota 2, creo en esta pagina porque me encanto el juego, fue uno de los juegos que mas me entretuvo y ademas fue una buena forma de practicar con js ya que en esta pagina esta hecha con js puro y un poco de jQuery." },
 
-        { nombre: "App Musica", real: "0", empresa: "", img: "proyectos/proyecto_appmusica.jpg", git: "https://github.com/kevin2561/appMusica", pagina: "", descripcion: "Una pequeña aplicación que Brendia puede convertir en mp3 en la que podrás escuchar una lista de canciones." },
+        { nombre: "App Musica", real: "0", empresa: "", img: "./img/proyectos/proyecto_appmusica.jpg", git: "https://github.com/kevin2561/appMusica", pagina: "", descripcion: "Una pequeña aplicación que Brendia puede convertir en mp3 en la que podrás escuchar una lista de canciones." },
 
-        { nombre: "CRUD Gestor de Cuentas", real: "0", empresa: "", img: "proyectos/proyecto_sistemacuentas.jpg", git: "https://github.com/kevin2561/CRUD-Gestor-de-Cuentas.git", pagina: "", descripcion: "Este proyecto fue creado para administrar las ventas del pequeño negocio de mi padre, permitiendo registrar, consultar y editar reportes de ventas. Utilicé HTML, CSS, JavaScript y MySQL para desarrollar la solución." },
+        { nombre: "CRUD Gestor de Cuentas", real: "0", empresa: "", img: "./img/proyectos/proyecto_sistemacuentas.jpg", git: "https://github.com/kevin2561/CRUD-Gestor-de-Cuentas.git", pagina: "", descripcion: "Este proyecto fue creado para administrar las ventas del pequeño negocio de mi padre, permitiendo registrar, consultar y editar reportes de ventas. Utilicé HTML, CSS, JavaScript y MySQL para desarrollar la solución." },
     ]
 
     let enlaces = ["sobre-mi", "tecnologias-main", "habilidades-blandas", "proyectos-main", "contacto-main"]
@@ -122,7 +122,7 @@ const main = () => {
         proyectos.map((proyecto) => {
             article += `<article class='card__article swiper-slide'>`
             article += `<div class='card__image'>`
-            article += `<img src='./img/${proyecto.img}' alt='${proyecto.nombre}' class='card__img'>`
+            article += `<img src='${proyecto.img}' alt='${proyecto.nombre}' class='card__img'>`
             article += `<div class='card__shadow'></div>`
             article += `</div>`
             article += `<div class='card__data'>`
