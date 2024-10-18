@@ -122,7 +122,7 @@ const main = () => {
         proyectos.map((proyecto) => {
             article += `<article class='card__article swiper-slide'>`
             article += `<div class='card__image'>`
-            article += `<img src='${proyecto.img}' alt='${proyecto.nombre}' class='card__img'>`
+            article += `<img src='./${proyecto.img}' alt='${proyecto.nombre}' class='card__img'>`
             article += `<div class='card__shadow'></div>`
             article += `</div>`
             article += `<div class='card__data'>`
